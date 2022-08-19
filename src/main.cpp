@@ -1,7 +1,7 @@
 #include <iostream>
 #include <time.h>
 
-void calculateProbabilityOfSides(int repetitions, int counter[], int repeat);
+void calculateProbabilityOfSides(int repetitions, int repeat, int counter[]);
 void readsTheNumberRepetitions(int &repetitions);
 void throwTheDiceOnce(int repetitions);
 void throwTheDiceThreeTimes(int repetitions);
@@ -10,7 +10,7 @@ void throwTheDiceThreeTimes(int repetitions);
 
 using namespace std;
 
-void calculateProbabilityOfSides(int repetitions, int counter[], int repeat)
+void calculateProbabilityOfSides(int repetitions, int repeat, int counter[])
 {
   for (int i = 0; i < repeat; i++)
   {
@@ -51,7 +51,7 @@ void throwTheDiceOnce(int repetitions)
     }
   }
 
-  calculateProbabilityOfSides(repetitions, counter, 20);
+  calculateProbabilityOfSides(repetitions, 20, counter);
 }
 
 void throwTheDiceThreeTimes(int repetitions)
@@ -76,7 +76,7 @@ void throwTheDiceThreeTimes(int repetitions)
     }
   }
 
-  calculateProbabilityOfSides(repetitions, counter, 60);
+  calculateProbabilityOfSides(repetitions, 60, counter);
 }
 
 int main()

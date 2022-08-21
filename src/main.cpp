@@ -41,14 +41,7 @@ void throwTheDiceOnce(int repetitions)
   {
     int randomNumber = rand() % 20 + 1;
 
-    if (counter[randomNumber - 1])
-    {
-      counter[randomNumber - 1] = counter[randomNumber - 1] + 1;
-    }
-    else
-    {
-      counter[randomNumber - 1] = 1;
-    }
+    counter[randomNumber - 1] += 1;
   }
 
   calculateProbabilityOfSides(repetitions, 20, counter);
@@ -63,17 +56,10 @@ void throwTheDiceThreeTimes(int repetitions)
     int randomNumber = 0;
     for (int j = 0; j < THREE_TIMES; j++)
     {
-      randomNumber = randomNumber + (rand() % 20 + 1);
+      randomNumber += (rand() % 20) + 1;
     }
 
-    if (counter[randomNumber - 1])
-    {
-      counter[randomNumber - 1] = counter[randomNumber - 1] + 1;
-    }
-    else
-    {
-      counter[randomNumber - 1] = 1;
-    }
+    counter[randomNumber - 1] += 1;
   }
 
   calculateProbabilityOfSides(repetitions, 60, counter);

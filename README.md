@@ -2,7 +2,7 @@
 
 [![wakatime](https://wakatime.com/badge/user/920a7e43-2969-4212-82ff-1b375685ff58/project/a38691d1-81d5-4c57-ba09-e5d8f34801b7.svg)](https://wakatime.com/badge/user/920a7e43-2969-4212-82ff-1b375685ff58/project/a38691d1-81d5-4c57-ba09-e5d8f34801b7)
 
-Jogo de dados desenvolvido em C++. Desenvolvido por Daniel Sansão Araldi e Mateus Vanunci.
+Jogo de dados desenvolvido em C++. Desenvolvido por Daniel Sansão Araldi e Matheus Vanunci.
 
 ### Descrição
 
